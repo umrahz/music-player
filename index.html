@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats | Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-wave-square"></i>
+            </div>
+            <div class="app-name">Beats</div> 
+        </div>
+        <div class="developer">
+            dev by umrah z
+            <div class="account-icon">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="panel-title">
+                <i class="fas fa-headphones"></i>
+                Your Playlists
+            </div>
+            
+            <div class="playlist-item active" data-id="top-hits">
+                <i class="playlist-icon fas fa-music"></i>
+                <div class="playlist-details">
+                    <div class="playlist-name">Top Hits</div>
+                    <div class="playlist-info">
+                        <span>5 songs</span>
+                        <span class="playlist-duration">18:52</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-item" data-id="chill-vibes">
+                <i class="playlist-icon fas fa-cloud-moon"></i>
+                <div class="playlist-details">
+                    <div class="playlist-name">Chill Vibes</div>
+                    <div class="playlist-info">
+                        <span>5 songs</span>
+                        <span class="playlist-duration">19:44</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-item" data-id="workout-mix">
+                <i class="playlist-icon fas fa-fire"></i>
+                <div class="playlist-details">
+                    <div class="playlist-name">Workout Mix</div>
+                    <div class="playlist-info">
+                        <span>5 songs</span>
+                        <span class="playlist-duration">23:24</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Panel -->
+        <div class="main-panel">
+            <div class="playlist-header">
+                <div class="playlist-collage">
+                    <div class="collage-img" style="background-image: url('posters/closer.jpg')"></div>
+                    <div class="collage-img" style="background-image: url('posters/congratulations.jpg')"></div>
+                    <div class="collage-img" style="background-image: url('posters/faded.jpg')"></div>
+                    <div class="collage-img" style="background-image: url('posters/letmeloveyou.jpg')"></div>
+                </div>
+                <div class="playlist-info-container">
+                    <h1 class="playlist-title">Top Hits</h1>
+                    <div class="playlist-stats">
+                        <span><i class="fas fa-music"></i> 5 songs</span>
+                        <span><i class="fas fa-clock"></i> 18:52</span>
+                        <span><i class="fas fa-calendar"></i> Created: Jun 2023</span>
+                    </div>
+                    <p class="playlist-description">
+                        A collection of the most popular tracks currently trending worldwide. 
+                        This playlist features chart-topping hits from various artists and genres.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="songs-list">
+                <!-- Songs will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Player Bar -->
+    <div class="player-bar">
+        <div class="current-song">
+            <div class="current-img" style="background-image: url('posters/closer.jpg')"></div>
+            <div class="current-details">
+                <div class="title">Closer</div>
+                <div class="artist">The Chainsmokers ft. Halsey</div>
+            </div>
+        </div>
+        
+        <div class="player-controls">
+            <div class="control-buttons">
+                <button class="control-btn" id="shuffle-btn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="control-btn" id="prev-btn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-pause" id="play-pause-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="next-btn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="control-btn" id="repeat-btn">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+            <div class="progress-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:04</span>
+            </div>
+        </div>
+        
+        <div class="volume-controls">
+            <i class="volume-icon fas fa-volume-up" id="volume-icon"></i>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="80">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
