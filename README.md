@@ -3,7 +3,6 @@
 
 Beats is a sleek, modern web-based music player with playlist functionality, featuring a professional UI with eminence purple and black color scheme. This player includes all essential music playback controls, playlist management, and a responsive design.
 
-![Beats Music Player Screenshot](https://via.placeholder.com/800x500/6A0DAD/FFFFFF?text=Beats+Music+Player)
 
 ## Features
 
@@ -116,14 +115,7 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a pull request
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Preview
-
-![Player Interface](https://via.placeholder.com/600x400/4D0A7F/FFFFFF?text=Player+Interface)
-![Playlist View](https://via.placeholder.com/600x400/8B48BF/FFFFFF?text=Playlist+View)
 
 ## Connect with Developer
 
